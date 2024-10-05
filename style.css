@@ -4,36 +4,29 @@
     box-sizing: border-box;
 }
 
-.headimg{
+.pic-wrap{
+    background-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    background: linear-gradient(to left rgba(0,0,0, 0) 0%, rgb(0,0,0) 100%);
+
+    #img-kab{
     width: 100%;
-    height: 100vh;
+    }
 }
 
-.wrapper{
-    width: 1080px;
-    height: 2000px;
-    background-color: aqua;
-}
-
-.contents{
+.content{
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 592px;
+    padding: 120px;
     top: 0;
     color: white;
-    background: linear-gradient(to left, rgba(0,0,0, 0) 0%, rgb(0,0,0) 100%);
-    
-    #wht_is{
-        font-size:  50px;
-        margin-top: 30vh;
-        margin-left: 50px;
+    background-color: transparent;
+
+    .wht-is{
+        font-size: 130px;
+        margin-top: 50px;
     }
 
-    #sg{
-        margin-top: 30px;
-        font-family: "Macondo", cursive;
-        font-weight: 3000;
-        font-size: 30;
-        font-style: normal;
-    }
 }
