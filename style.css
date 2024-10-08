@@ -61,13 +61,12 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.88567927170868
 
 .content{
     position: absolute;
-    width: 500px;
-    height: 400px;
+    width: 950px;
+    height: 680px;
     top: 0;
     color: white;
     padding: 120px;
     align-items: center;
-    
 }
 
 .wht-is{
@@ -75,8 +74,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.88567927170868
     height: 200px;
     margin-top: 30px;
     left: 0;
+    font-size: 50px;
 }
 
 #sgt{
+    font-size: 100px;
     font-family: "Potta One", system-ui;
+    line-height: 0.8;
+}
+
+#par{
+    margin-top: 130px;
 }
