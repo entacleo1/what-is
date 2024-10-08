@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 70px;
     display: flex;
@@ -16,16 +17,17 @@
     align-items: center;
     z-index: 1;
 }
-
 ul{
     font-family: "Potta One", system-ui;
+    height: 70px;
+    padding: 47%;
     font-weight: 300;
     font-size: 20px;
-    justify-items: center;
+    justify-content: center;
     font-style: normal;
     display: flex;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
     gap: 30px;
     align-items: center;
 }
@@ -34,30 +36,38 @@ li{
     justify-content: center;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 .pic-wrap{
    position: relative;
    width: 100%;
    height: 100vh;  
+   background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8856792717086834) 23%, rgba(0,0,0,0.7176120448179272) 48%, rgba(0,0,0,0) 100%);
 }
 
 #img-kab{
-    position: absolute;
+     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover; 
     height: 100vh;  
     transform: scaleX(-1);
+    z-index: -1;
 }
 
 .content{
     position: absolute;
-    width: 100vw;
-    height: 680px;
+    width: 500px;
+    height: 400px;
     top: 0;
     color: white;
     padding: 120px;
     align-items: center;
+    
 }
 
 .wht-is{
@@ -65,7 +75,6 @@ li{
     height: 200px;
     margin-top: 30px;
     left: 0;
-
 }
 
 #sgt{
