@@ -1,0 +1,16 @@
+@media (max-width:1280px){
+    #par{
+        margin-top: 35px;
+    }
+}
+
+@media(max-width:1190px){
+    #img-ang{
+        display: none;
+    }
+    .his-text{
+        position: absolute;
+        align-items: center;
+      }
+    
+}

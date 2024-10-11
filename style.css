@@ -5,34 +5,30 @@
 }
 
 .top-bar{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 70px;
     display: flex;
-    background-color: black;
-    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(10px);
+    justify-content: right;
     align-items: center;
-    z-index: 1;
+    padding: 0 30px;
 }
 ul{
-    font-family: "Potta One", system-ui;
-    height: 70px;
-    padding: 47%;
-    font-weight: 300;
-    font-size: 20px;
-    justify-content: center;
-    font-style: normal;
+    float: right;
+    gap: 50px;
+    margin-right: 50px;
     display: flex;
-    list-style: none;
-    text-decoration: none;
-    gap: 30px;
-    align-items: center;
+    font-family: "Potta One", system-ui;
+    
 }
 
 li{
+
     justify-content: center;
 }
 
@@ -42,27 +38,26 @@ a{
 }
 
 .pic-wrap{
-   position: relative;
    width: 100%;
    height: 100vh;  
    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8856792717086834) 23%, rgba(0,0,0,0.7176120448179272) 48%, rgba(0,0,0,0) 100%);
+   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8856792717086834) 23%, rgba(0,0,0,0.7176120448179272) 48%, rgba(0,0,0,0) 100%);
+
 }
 
 #img-kab{
-     position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    height: 100vh;  
-    transform: scaleX(-1);
+    height: 100vh; 
     z-index: -1;
 }
 
 .content{
     position: absolute;
-    width: 950px;
-    height: 680px;
+    width: 90%; 
+    max-width: 1070px; 
     top: 0;
     color: white;
     padding: 120px;
@@ -78,11 +73,181 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.88567927170868
 }
 
 #sgt{
-    font-size: 100px;
+    font-size: 5.21vw;
     font-family: "Potta One", system-ui;
     line-height: 0.8;
 }
 
 #par{
-    margin-top: 130px;
+    margin-top: 70px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 900px;
+}
+
+#his{
+    margin-top: 30px;
+    width: 100%;
+    font-family: "Potta One", system-ui;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+}
+
+#his-contents{
+    position: absolute;
+    width: 100%;
+    margin-top: 170px;
+    padding: 100px;
+    background-color: azure;
+    display: flex;
+}
+
+#img-ang{
+    height:450px ;
+}
+
+.his-text{
+    position: absolute;
+    left: 600px;
+    align-items: center;
+}
+
+#hist{
+    font-family:"Potta One", system-ui ;
+    text-align: center;
+    font-size: 50px;
+}
+
+#para{
+    margin-top: 20px;
+    padding: 0 50px;
+    font-family: "Poppins", sans-serif ;
+}
+
+.btn{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 170px;
+    height: 45px;
+    border: none;
+    background-color: darkgray;
+}
+
+.btn:hover{
+    background-color: black;
+    color:white;
+}
+
+.contacts{
+    width: 100%;
+    background-color: aqua;
+    height: 500px;
+}
+.pss{
+    width: 100%;
+    height: 870px;
+}
+
+.pss-text{
+    margin-top: 30px;
+    width: 100%;
+    font-family: "Potta One", system-ui;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    display: none;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px; 
+}
+
+.prev {
+    left: 0; 
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .pss{
+    width: 100%;
+    height: 870px;
 }
